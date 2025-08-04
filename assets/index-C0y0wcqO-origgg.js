@@ -56,7 +56,229 @@ import{r as f,a as Ht,b as kr,R as W,c as oe}from"./react-vendor-ZAbDnuDT.js";im
                         dark:from-purple-500 dark:to-purple-400 rounded-full`,transition:{type:"spring",bounce:.25,duration:.5}}),n.jsx("span",{className:"relative z-10",children:n.jsx(a.icon,{className:"w-5 h-5"})}),n.jsx("span",{className:"relative z-10 tracking-wide hidden lg:block text-sm font-medium",children:a.name})]},a.name))})}),n.jsx("div",{className:"flex items-center min-w-[90px] sm:min-w-[120px] justify-end",children:n.jsx("div",{className:`flex items-center bg-white/50 dark:bg-gray-800/50 
               backdrop-blur-sm rounded-full border border-purple-100 dark:border-purple-900/50 
               shadow-lg shadow-purple-100/20 dark:shadow-purple-900/20
-              w-full h-[34px] sm:h-[38px]`,children:n.jsxs("div",{className:"flex items-center justify-between w-full px-3 h-full",children:[n.jsx(S.a,{whileHover:{scale:1.05},whileTap:{scale:.95},href:"https://salidaph.online",target:"_blank",rel:"noopener noreferrer",className:"flex items-center hover:opacity-80 transition-all duration-200 h-full",children:n.jsx("img",{src:"https://salidaph.online/assests/salida.png",alt:"salidaph",className:"h-5 sm:h-6 w-auto"})}),n.jsx("div",{className:"h-4 w-px bg-purple-200 dark:bg-purple-800/50"}),n.jsx(S.a,{whileHover:{scale:1.05},whileTap:{scale:.95},href:"https://tv.salidaph.online",target:"_blank",rel:"noopener noreferrer",className:"flex items-center hover:opacity-80 transition-all duration-200 h-full",children:n.jsx("img",{src:"https://s14.gifyu.com/images/bKGoY.png",alt:"MARUYATV",className:"h-5 sm:h-6 w-auto"})})]})})})]})})})}const za=[{id:939243,url:"/posters/poster_939243.jpg"},{id:1241982,url:"/posters/poster_1241982.jpg"},{id:539972,url:"/posters/poster_539972.jpg"},{id:993710,url:"/posters/poster_993710.jpg"},{id:1249289,url:"/posters/poster_1249289.jpg"},{id:426063,url:"/posters/poster_426063.jpg"},{id:1410082,url:"/posters/poster_1410082.jpg"},{id:85,url:"/posters/poster_85.jpg"},{id:762509,url:"/posters/poster_762509.jpg"},{id:811941,url:"/posters/poster_811941.jpg"},{id:426889,url:"/posters/poster_426889.jpg"},{id:1097549,url:"/posters/poster_1097549.jpg"},{id:912649,url:"/posters/poster_912649.jpg"},{id:558449,url:"/posters/poster_558449.jpg"},{id:933260,url:"/posters/poster_933260.jpg"},{id:604685,url:"/posters/poster_604685.jpg"},{id:970450,url:"/posters/poster_970450.jpg"},{id:1255788,url:"/posters/poster_1255788.jpg"},{id:1064213,url:"/posters/poster_1064213.jpg"},{id:1222248,url:"/posters/poster_1222248.jpg"},{id:1035048,url:"/posters/poster_1035048.jpg"},{id:402431,url:"/posters/poster_402431.jpg"},{id:1156593,url:"/posters/poster_1156593.jpg"},{id:845781,url:"/posters/poster_845781.jpg"},{id:1081012,url:"/posters/poster_1081012.jpg"},{id:839033,url:"/posters/poster_839033.jpg"},{id:1241320,url:"/posters/poster_1241320.jpg"},{id:1114894,url:"/posters/poster_1114894.jpg"},{id:1222064,url:"/posters/poster_1222064.jpg"},{id:1184918,url:"/posters/poster_1184918.jpg"},{id:1357633,url:"/posters/poster_1357633.jpg"},{id:1010581,url:"/posters/poster_1010581.jpg"},{id:1064486,url:"/posters/poster_1064486.jpg"},{id:823219,url:"/posters/poster_823219.jpg"},{id:533535,url:"/posters/poster_533535.jpg"},{id:1252309,url:"/posters/poster_1252309.jpg"},{id:1043905,url:"/posters/poster_1043905.jpg"},{id:1022789,url:"/posters/poster_1022789.jpg"},{id:519182,url:"/posters/poster_519182.jpg"},{id:1138194,url:"/posters/poster_1138194.jpg"},{id:85231,url:"/posters/poster_85231.jpg"},{id:257064,url:"/posters/poster_257064.jpg"},{id:257048,url:"/posters/poster_257048.jpg"},{id:93405,url:"/posters/poster_93405.jpg"},{id:6489,url:"/posters/poster_6489.jpg"},{id:13008,url:"/posters/poster_13008.jpg"},{id:237478,url:"/posters/poster_237478.jpg"},{id:23915,url:"/posters/poster_23915.jpg"},{id:34860,url:"/posters/poster_34860.jpg"},{id:263050,url:"/posters/poster_263050.jpg"},{id:80318,url:"/posters/poster_80318.jpg"},{id:36361,url:"/posters/poster_36361.jpg"},{id:33238,url:"/posters/poster_33238.jpg"},{id:206559,url:"/posters/poster_206559.jpg"},{id:243754,url:"/posters/poster_243754.jpg"},{id:3091,url:"/posters/poster_3091.jpg"},{id:1770,url:"/posters/poster_1770.jpg"},{id:280749,url:"/posters/poster_280749.jpg"},{id:5092,url:"/posters/poster_5092.jpg"},{id:3940,url:"/posters/poster_3940.jpg"},{id:37971,url:"/posters/poster_37971.jpg"},{id:36301,url:"/posters/poster_36301.jpg"},{id:252373,url:"/posters/poster_252373.jpg"},{id:66515,url:"/posters/poster_66515.jpg"},{id:63809,url:"/posters/poster_63809.jpg"},{id:235484,url:"/posters/poster_235484.jpg"},{id:80885,url:"/posters/poster_80885.jpg"},{id:291,url:"/posters/poster_291.jpg"},{id:41018,url:"/posters/poster_41018.jpg"},{id:21502,url:"/posters/poster_21502.jpg"},{id:13945,url:"/posters/poster_13945.jpg"},{id:64356,url:"/posters/poster_64356.jpg"},{id:235493,url:"/posters/poster_235493.jpg"},{id:2912,url:"/posters/poster_2912.jpg"},{id:6809,url:"/posters/poster_6809.jpg"},{id:261121,url:"/posters/poster_261121.jpg"},{id:39084,url:"/posters/poster_39084.jpg"},{id:49036,url:"/posters/poster_49036.jpg"},{id:212907,url:"/posters/poster_212907.jpg"}],pt=[{value:"72K+",label:"MOVIES",gradient:"from-blue-400 via-blue-500 to-blue-600",shadowColor:"rgba(59, 130, 246, 0.5)"},{value:"14K+",label:"TV SHOWS",gradient:"from-purple-400 via-purple-500 to-purple-600",shadowColor:"rgba(147, 51, 234, 0.5)"},{value:"30+",label:"SUBTITLES",gradient:"from-emerald-400 via-emerald-500 to-emerald-600",shadowColor:"rgba(16, 185, 129, 0.5)"},{value:"1K+",label:"4K MOVIES",gradient:"from-rose-400 via-rose-500 to-rose-600",shadowColor:"rgba(244, 63, 94, 0.5)"},{value:"4K+",label:"ANIME",gradient:"from-orange-400 via-orange-500 to-orange-600",shadowColor:"rgba(251, 146, 60, 0.5)"}];function Fa(){const[t,e]=f.useState([]),[r,a]=f.useState(!0);return f.useEffect(()=>{const l=[...za].sort(()=>Math.random()-.5).map(i=>i.url);e([...l,...l].slice(0,96)),a(!1)},[]),n.jsx("div",{className:"min-h-[calc(100vh-4rem)] md:h-[calc(100vh-4rem)] relative",children:n.jsxs("div",{className:"relative h-full container mx-auto px-2 md:px-3",children:[n.jsxs(S.div,{initial:{opacity:0},animate:{opacity:1},transition:{duration:1},className:`absolute top-[6rem] md:top-[6.5rem] left-2 right-2 md:left-4 md:right-4 
+              w-full h-[34px] sm:h-[38px]`,children:n.jsxs("div",{className:"flex items-center justify-between w-full px-3 h-full",children:[n.jsx(S.a,{whileHover:{scale:1.05},whileTap:{scale:.95},href:"https://salidaph.online",target:"_blank",rel:"noopener noreferrer",className:"flex items-center hover:opacity-80 transition-all duration-200 h-full",children:n.jsx("img",{src:"https://salidaph.online/assests/salida.png",alt:"salidaph",className:"h-5 sm:h-6 w-auto"})}),n.jsx("div",{className:"h-4 w-px bg-purple-200 dark:bg-purple-800/50"}),n.jsx(S.a,{whileHover:{scale:1.05},whileTap:{scale:.95},href:"https://tv.salidaph.online",target:"_blank",rel:"noopener noreferrer",className:"flex items-center hover:opacity-80 transition-all duration-200 h-full",children:n.jsx("img",{src:"<!doctype html>
+<html lang="en">
+  
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="https://i.imgur.com/cmOdVwr.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Maruyatv - The most powerful video embed API. Integrate seamless video playback anywhere." />
+    <meta name="keywords" content="video api, embed, streaming, player, video platform" />
+    <meta name="author" content="Maruyatv" />
+
+    
+    <link rel="manifest" href="manifest.html" />
+    <link rel="apple-touch-icon" href="<!doctype html>
+<html lang="en">
+  
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="https://i.imgur.com/cmOdVwr.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Maruyatv - The most powerful video embed API. Integrate seamless video playback anywhere." />
+    <meta name="keywords" content="video api, embed, streaming, player, video platform" />
+    <meta name="author" content="Maruyatv" />
+
+    
+    <link rel="manifest" href="manifest.html" />
+    <link rel="apple-touch-icon" href="<!doctype html>
+<html lang="en">
+  
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="https://i.imgur.com/cmOdVwr.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Maruyatv - The most powerful video embed API. Integrate seamless video playback anywhere." />
+    <meta name="keywords" content="video api, embed, streaming, player, video platform" />
+    <meta name="author" content="Maruyatv" />
+
+    
+    <link rel="manifest" href="manifest.html" />
+    <link rel="apple-touch-icon" href="<!doctype html>
+<html lang="en">
+  
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="https://i.imgur.com/cmOdVwr.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Maruyatv - The most powerful video embed API. Integrate seamless video playback anywhere." />
+    <meta name="keywords" content="video api, embed, streaming, player, video platform" />
+    <meta name="author" content="Maruyatv" />
+
+    
+    <link rel="manifest" href="manifest.html" />
+    <link rel="apple-touch-icon" href="<!doctype html>
+<html lang="en">
+  
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="https://i.imgur.com/cmOdVwr.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Maruyatv - The most powerful video embed API. Integrate seamless video playback anywhere." />
+    <meta name="keywords" content="video api, embed, streaming, player, video platform" />
+    <meta name="author" content="Maruyatv" />
+
+    
+    <link rel="manifest" href="manifest.html" />
+    <link rel="apple-touch-icon" href="<!doctype html>
+<html lang="en">
+  
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="https://i.imgur.com/cmOdVwr.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Maruyatv - The most powerful video embed API. Integrate seamless video playback anywhere." />
+    <meta name="keywords" content="video api, embed, streaming, player, video platform" />
+    <meta name="author" content="Maruyatv" />
+
+    
+    <link rel="manifest" href="manifest.html" />
+    <link rel="apple-touch-icon" href="logo.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://i.imgur.com/cmOdVwr.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://i.imgur.com/cmOdVwr.png" />
+    <title>MARUYATV - Powerful Video Embed API</title>
+
+    <!-- Preload critical assets -->
+    <link rel="preload" href="https://i.imgur.com/cmOdVwr.png" as="image" />
+    <link rel="preconnect" href="https://api.videasy.net/" />
+    <link rel="preconnect" href="../player.videasy.net/index.html" />
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="fonts/inter-var.html" as="font" type="font/woff2" crossorigin />
+    <script type="module" crossorigin src="assets/index-C0y0wcqO.js"></script>
+    <link rel="modulepreload" crossorigin href="assets/react-vendor-ZAbDnuDT.js">
+    <link rel="modulepreload" crossorigin href="assets/ui-vendor-B4ZIl0mj.js">
+    <link rel="stylesheet" crossorigin href="assets/index-C8-njzVR.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+
+</html>
+" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://i.imgur.com/cmOdVwr.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://i.imgur.com/cmOdVwr.png" />
+    <title>MARUYATV - Powerful Video Embed API</title>
+
+    <!-- Preload critical assets -->
+    <link rel="preload" href="https://i.imgur.com/cmOdVwr.png" as="image" />
+    <link rel="preconnect" href="https://api.videasy.net/" />
+    <link rel="preconnect" href="../player.videasy.net/index.html" />
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="fonts/inter-var.html" as="font" type="font/woff2" crossorigin />
+    <script type="module" crossorigin src="assets/index-C0y0wcqO.js"></script>
+    <link rel="modulepreload" crossorigin href="assets/react-vendor-ZAbDnuDT.js">
+    <link rel="modulepreload" crossorigin href="assets/ui-vendor-B4ZIl0mj.js">
+    <link rel="stylesheet" crossorigin href="assets/index-C8-njzVR.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+
+</html>
+" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://i.imgur.com/cmOdVwr.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://i.imgur.com/cmOdVwr.png" />
+    <title>MARUYATV - Powerful Video Embed API</title>
+
+    <!-- Preload critical assets -->
+    <link rel="preload" href="https://i.imgur.com/cmOdVwr.png" as="image" />
+    <link rel="preconnect" href="https://api.videasy.net/" />
+    <link rel="preconnect" href="../player.videasy.net/index.html" />
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="fonts/inter-var.html" as="font" type="font/woff2" crossorigin />
+    <script type="module" crossorigin src="assets/index-C0y0wcqO.js"></script>
+    <link rel="modulepreload" crossorigin href="assets/react-vendor-ZAbDnuDT.js">
+    <link rel="modulepreload" crossorigin href="assets/ui-vendor-B4ZIl0mj.js">
+    <link rel="stylesheet" crossorigin href="assets/index-C8-njzVR.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+
+</html>
+" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://i.imgur.com/cmOdVwr.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://i.imgur.com/cmOdVwr.png" />
+    <title>MARUYATV - Powerful Video Embed API</title>
+
+    <!-- Preload critical assets -->
+    <link rel="preload" href="https://i.imgur.com/cmOdVwr.png" as="image" />
+    <link rel="preconnect" href="https://api.videasy.net/" />
+    <link rel="preconnect" href="../player.videasy.net/index.html" />
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="fonts/inter-var.html" as="font" type="font/woff2" crossorigin />
+    <script type="module" crossorigin src="assets/index-C0y0wcqO.js"></script>
+    <link rel="modulepreload" crossorigin href="assets/react-vendor-ZAbDnuDT.js">
+    <link rel="modulepreload" crossorigin href="assets/ui-vendor-B4ZIl0mj.js">
+    <link rel="stylesheet" crossorigin href="assets/index-C8-njzVR.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+
+</html>
+" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://i.imgur.com/cmOdVwr.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://i.imgur.com/cmOdVwr.png" />
+    <title>MARUYATV - Powerful Video Embed API</title>
+
+    <!-- Preload critical assets -->
+    <link rel="preload" href="https://i.imgur.com/cmOdVwr.png" as="image" />
+    <link rel="preconnect" href="https://api.videasy.net/" />
+    <link rel="preconnect" href="../player.videasy.net/index.html" />
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="fonts/inter-var.html" as="font" type="font/woff2" crossorigin />
+    <script type="module" crossorigin src="assets/index-C0y0wcqO.js"></script>
+    <link rel="modulepreload" crossorigin href="assets/react-vendor-ZAbDnuDT.js">
+    <link rel="modulepreload" crossorigin href="assets/ui-vendor-B4ZIl0mj.js">
+    <link rel="stylesheet" crossorigin href="assets/index-C8-njzVR.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+
+</html>
+" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://i.imgur.com/cmOdVwr.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://i.imgur.com/cmOdVwr.png" />
+    <title>MARUYATV - Powerful Video Embed API</title>
+
+    <!-- Preload critical assets -->
+    <link rel="preload" href="https://i.imgur.com/cmOdVwr.png" as="image" />
+    <link rel="preconnect" href="https://api.videasy.net/" />
+    <link rel="preconnect" href="../player.videasy.net/index.html" />
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="fonts/inter-var.html" as="font" type="font/woff2" crossorigin />
+    <script type="module" crossorigin src="assets/index-C0y0wcqO.js"></script>
+    <link rel="modulepreload" crossorigin href="assets/react-vendor-ZAbDnuDT.js">
+    <link rel="modulepreload" crossorigin href="assets/ui-vendor-B4ZIl0mj.js">
+    <link rel="stylesheet" crossorigin href="assets/index-C8-njzVR.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+
+</html>
+",alt:"MARUYATV",className:"h-5 sm:h-6 w-auto"})})]})})})]})})})}const za=[{id:939243,url:"/posters/poster_939243.jpg"},{id:1241982,url:"/posters/poster_1241982.jpg"},{id:539972,url:"/posters/poster_539972.jpg"},{id:993710,url:"/posters/poster_993710.jpg"},{id:1249289,url:"/posters/poster_1249289.jpg"},{id:426063,url:"/posters/poster_426063.jpg"},{id:1410082,url:"/posters/poster_1410082.jpg"},{id:85,url:"/posters/poster_85.jpg"},{id:762509,url:"/posters/poster_762509.jpg"},{id:811941,url:"/posters/poster_811941.jpg"},{id:426889,url:"/posters/poster_426889.jpg"},{id:1097549,url:"/posters/poster_1097549.jpg"},{id:912649,url:"/posters/poster_912649.jpg"},{id:558449,url:"/posters/poster_558449.jpg"},{id:933260,url:"/posters/poster_933260.jpg"},{id:604685,url:"/posters/poster_604685.jpg"},{id:970450,url:"/posters/poster_970450.jpg"},{id:1255788,url:"/posters/poster_1255788.jpg"},{id:1064213,url:"/posters/poster_1064213.jpg"},{id:1222248,url:"/posters/poster_1222248.jpg"},{id:1035048,url:"/posters/poster_1035048.jpg"},{id:402431,url:"/posters/poster_402431.jpg"},{id:1156593,url:"/posters/poster_1156593.jpg"},{id:845781,url:"/posters/poster_845781.jpg"},{id:1081012,url:"/posters/poster_1081012.jpg"},{id:839033,url:"/posters/poster_839033.jpg"},{id:1241320,url:"/posters/poster_1241320.jpg"},{id:1114894,url:"/posters/poster_1114894.jpg"},{id:1222064,url:"/posters/poster_1222064.jpg"},{id:1184918,url:"/posters/poster_1184918.jpg"},{id:1357633,url:"/posters/poster_1357633.jpg"},{id:1010581,url:"/posters/poster_1010581.jpg"},{id:1064486,url:"/posters/poster_1064486.jpg"},{id:823219,url:"/posters/poster_823219.jpg"},{id:533535,url:"/posters/poster_533535.jpg"},{id:1252309,url:"/posters/poster_1252309.jpg"},{id:1043905,url:"/posters/poster_1043905.jpg"},{id:1022789,url:"/posters/poster_1022789.jpg"},{id:519182,url:"/posters/poster_519182.jpg"},{id:1138194,url:"/posters/poster_1138194.jpg"},{id:85231,url:"/posters/poster_85231.jpg"},{id:257064,url:"/posters/poster_257064.jpg"},{id:257048,url:"/posters/poster_257048.jpg"},{id:93405,url:"/posters/poster_93405.jpg"},{id:6489,url:"/posters/poster_6489.jpg"},{id:13008,url:"/posters/poster_13008.jpg"},{id:237478,url:"/posters/poster_237478.jpg"},{id:23915,url:"/posters/poster_23915.jpg"},{id:34860,url:"/posters/poster_34860.jpg"},{id:263050,url:"/posters/poster_263050.jpg"},{id:80318,url:"/posters/poster_80318.jpg"},{id:36361,url:"/posters/poster_36361.jpg"},{id:33238,url:"/posters/poster_33238.jpg"},{id:206559,url:"/posters/poster_206559.jpg"},{id:243754,url:"/posters/poster_243754.jpg"},{id:3091,url:"/posters/poster_3091.jpg"},{id:1770,url:"/posters/poster_1770.jpg"},{id:280749,url:"/posters/poster_280749.jpg"},{id:5092,url:"/posters/poster_5092.jpg"},{id:3940,url:"/posters/poster_3940.jpg"},{id:37971,url:"/posters/poster_37971.jpg"},{id:36301,url:"/posters/poster_36301.jpg"},{id:252373,url:"/posters/poster_252373.jpg"},{id:66515,url:"/posters/poster_66515.jpg"},{id:63809,url:"/posters/poster_63809.jpg"},{id:235484,url:"/posters/poster_235484.jpg"},{id:80885,url:"/posters/poster_80885.jpg"},{id:291,url:"/posters/poster_291.jpg"},{id:41018,url:"/posters/poster_41018.jpg"},{id:21502,url:"/posters/poster_21502.jpg"},{id:13945,url:"/posters/poster_13945.jpg"},{id:64356,url:"/posters/poster_64356.jpg"},{id:235493,url:"/posters/poster_235493.jpg"},{id:2912,url:"/posters/poster_2912.jpg"},{id:6809,url:"/posters/poster_6809.jpg"},{id:261121,url:"/posters/poster_261121.jpg"},{id:39084,url:"/posters/poster_39084.jpg"},{id:49036,url:"/posters/poster_49036.jpg"},{id:212907,url:"/posters/poster_212907.jpg"}],pt=[{value:"72K+",label:"MOVIES",gradient:"from-blue-400 via-blue-500 to-blue-600",shadowColor:"rgba(59, 130, 246, 0.5)"},{value:"14K+",label:"TV SHOWS",gradient:"from-purple-400 via-purple-500 to-purple-600",shadowColor:"rgba(147, 51, 234, 0.5)"},{value:"30+",label:"SUBTITLES",gradient:"from-emerald-400 via-emerald-500 to-emerald-600",shadowColor:"rgba(16, 185, 129, 0.5)"},{value:"1K+",label:"4K MOVIES",gradient:"from-rose-400 via-rose-500 to-rose-600",shadowColor:"rgba(244, 63, 94, 0.5)"},{value:"4K+",label:"ANIME",gradient:"from-orange-400 via-orange-500 to-orange-600",shadowColor:"rgba(251, 146, 60, 0.5)"}];function Fa(){const[t,e]=f.useState([]),[r,a]=f.useState(!0);return f.useEffect(()=>{const l=[...za].sort(()=>Math.random()-.5).map(i=>i.url);e([...l,...l].slice(0,96)),a(!1)},[]),n.jsx("div",{className:"min-h-[calc(100vh-4rem)] md:h-[calc(100vh-4rem)] relative",children:n.jsxs("div",{className:"relative h-full container mx-auto px-2 md:px-3",children:[n.jsxs(S.div,{initial:{opacity:0},animate:{opacity:1},transition:{duration:1},className:`absolute top-[6rem] md:top-[6.5rem] left-2 right-2 md:left-4 md:right-4 
             bottom-[1rem] md:bottom-4
             rounded-2xl md:rounded-3xl overflow-hidden
             bg-gradient-to-br from-white/80 via-purple-50/80 to-white/80 
@@ -268,4 +490,5 @@ window.addEventListener("message", function (event) {
             bg-purple-500/10 rounded-full blur-3xl`}),n.jsx("div",{className:`absolute bottom-0 left-0 w-[600px] h-[600px] 
             bg-purple-600/10 rounded-full blur-3xl`}),n.jsx("div",{className:`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
             w-[1000px] h-[1000px] bg-purple-400/10 rounded-full blur-3xl`})]}),n.jsxs("div",{className:"relative",children:[n.jsx(Wa,{}),n.jsx("main",{className:"relative min-h-[calc(100vh-4rem)]",children:n.jsxs(wa,{children:[n.jsx(he,{path:"/",element:n.jsx(Fa,{})}),n.jsx(he,{path:"/player",element:n.jsx(Ja,{})}),n.jsx(he,{path:"/docs",element:n.jsx(as,{})})]})})]})]})})}Re.createRoot(document.getElementById("root")).render(n.jsx(W.StrictMode,{children:n.jsx(Oa,{children:n.jsx(ns,{})})}));
+
 
