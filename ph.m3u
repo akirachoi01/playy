@@ -1,9 +1,17 @@
 
 #EXTM3U 
+#EXTINF:-1 tvg-id="kapcha" tvg-name="Author Info" tvg-logo="https://i.imgur.com/54f9r5A.png" group-title="🇵🇭 TFC CHANNELS",KAPAMILYA (TFC)
+https://github.com/akirachoi01/playy/blob/aac9dd345387bfa0435a4525880dd314fd140e21/intro.ts
+
+#EXTM3U 
 #EXTINF:-1 tvg-id="kapcha" tvg-name="KAPAMILYA (TFC)" tvg-logo="https://i.imgur.com/54f9r5A.png" group-title="🇵🇭 TFC CHANNELS",KAPAMILYA (TFC)
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=bd17afb5dc9648a39be79ee3634dd4b8:3ecf305d54a7729299b93a3d69c02ea5
 https://d1uf7s78uqso1e.cloudfront.net/out/v1/efa01372657648be830e7c23ff68bea2/index.mpd
+
+#EXTM3U 
+#EXTINF:-1 tvg-id="kapcha" tvg-name="Author Info" tvg-logo="https://i.imgur.com/54f9r5A.png" group-title="🇵🇭 TFC CHANNELS",KAPAMILYA HD (CON)
+https://github.com/akirachoi01/playy/blob/aac9dd345387bfa0435a4525880dd314fd140e21/intro.ts
 
 #EXTINF:-1 tvg-id="kapcha1" tvg-name="KAPAMILYA HD (CON)" tvg-logo="https://i.imgur.com/meqX8zC.png" group-title="🇵🇭 TFC CHANNELS",KAPAMILYA HD (CON)
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
@@ -85,6 +93,10 @@ https://abslive.akamaized.net/dash/live/2028025/mor/manifest.mpd|Referer=https:/
 #KODIPROP:inputstream.adaptive.license_key=141288d93b0f4f89a3f614a365671411:ccd2e8162c5fe3f6d5207fb941c09686
 #EXTINF:-1 tvg-id="knowchantfc" tvg-name="KNOWLEDGE CHANNELS" tvg-logo="https://i.imgur.com/54f9r5A.png" group-title="🇵🇭 TFC CHANNELS",KNOWLEDGE CHANNELS (TFC)
 https://abslive.akamaized.net/dash/live/2028189/kc/manifest.mpd|Referer=https://www.iwanttfc.com/
+
+#EXTM3U 
+#EXTINF:-1 tvg-id="kapcha" tvg-name="Author Info" tvg-logo="https://i.imgur.com/54f9r5A.png" group-title="🇵🇭 KAPUSO CHANNELS",Info (CON)
+https://github.com/akirachoi01/playy/blob/aac9dd345387bfa0435a4525880dd314fd140e21/intro.ts
 
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
 #KODIPROP:inputstream.adaptive.license_key=http://143.44.136.74:9443/widevine/?deviceId=02:00:00:00:00:00
