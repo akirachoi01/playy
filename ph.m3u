@@ -1,6 +1,4 @@
 
-#EXTINF:-1 tvg-id="maruyakapuso" tvg-name="Author Info" tvg-logo="https://i.imgur.com/54f9r5A.png" group-title="🇵🇭 KAPUSO CHANNELS",MaruyaTV InFo
-https://raw.githubusercontent.com/akirachoi01/playy/main/intro.ts
 
 #EXTM3U 
 #EXTINF:-1 tvg-id="kapcha" tvg-name="KAPAMILYA (TFC)" tvg-logo="https://i.imgur.com/54f9r5A.png" group-title="🇵🇭 TFC CHANNELS",KAPAMILYA (TFC)
@@ -18,7 +16,7 @@ http://143.44.136.110:6910/001/2/ch00000090990000001286/manifest.mpd?virtualDoma
 #KODIPROP:inputstream.adaptive.license_key=http://143.44.136.74:9443/widevine/?deviceId=02:00:00:00:00:00
 http://143.44.136.110:6910/001/2/ch00000090990000001248/manifest.mpd?virtualDomain=001.live_hls.zte.com
 
-#EXTINF:-1 tvg-id="maruyakapuso" tvg-name="Author Info" tvg-logo="https://i.imgur.com/54f9r5A.png" group-title="🇵🇭 TFC CHANNELS",MaruyaTV InFo
+#EXTINF:-1 tvg-id="maruyacapcha1" tvg-name="Author Info" tvg-logo="https://i.imgur.com/54f9r5A.png" group-title="🇵🇭 TFC CHANNELS",MaruyaTV InFo
 https://raw.githubusercontent.com/akirachoi01/playy/main/intro.ts
 
 #EXTINF:-1 tvg-id="kapcha1" tvg-name="PBB CE LIVE (TFC)" tvg-logo="https://i.imgur.com/Niy6Xka.jpg" group-title="🇵🇭 TFC CHANNELS",PBB CE LIVE (TFC)
@@ -93,8 +91,8 @@ https://abslive.akamaized.net/dash/live/2028025/mor/manifest.mpd|Referer=https:/
 https://abslive.akamaized.net/dash/live/2028189/kc/manifest.mpd|Referer=https://www.iwanttfc.com/
 
 #EXTM3U 
-#EXTINF:-1 tvg-id="kapcha" tvg-name="Author Info" tvg-logo="https://i.imgur.com/54f9r5A.png" group-title="🇵🇭 KAPUSO CHANNELS",Info (CON)
-https://github.com/akirachoi01/playy/blob/aac9dd345387bfa0435a4525880dd314fd140e21/intro.ts
+#EXTINF:-1 tvg-id="maruyakapuso" tvg-name="Author Info" tvg-logo="https://i.imgur.com/54f9r5A.png" group-title="🇵🇭 KAPUSO CHANNELS",MaruyaTV Info (CON)
+https://raw.githubusercontent.com/akirachoi01/playy/main/intro.ts
 
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
 #KODIPROP:inputstream.adaptive.license_key=http://143.44.136.74:9443/widevine/?deviceId=02:00:00:00:00:00
@@ -126,7 +124,8 @@ https://absp-live.akamaized.net/dash/live/2099524/gmalf/manifest.mpd|Referer=htt
 #EXTINF:-1 tvg-id="gmanewstv" tvg-name="GMA NEWS TV" tvg-logo="https://i.imgur.com/54f9r5A.png" group-title="🇵🇭 KAPUSO CHANNELS",GMA NEWS TV (TFC)
 https://absp-live.akamaized.net/dash/live/2099526/gmanw/manifest.mpd|Referer=https://www.iwanttfc.com/
 
-#EXTINF:-1 tvg-id="maruyakapuso" tvg-name="Author Info" tvg-logo="https://i.imgur.com/54f9r5A.png" group-title="🇵🇭 CIGNAL LOCAL",MaruyaTV InFo
+
+#EXTINF:-1 tvg-id="maruyacigloc" tvg-name="Author Info" tvg-logo="https://i.imgur.com/54f9r5A.png" group-title="🇵🇭 CIGNAL LOCAL",MaruyaTV InFo
 https://raw.githubusercontent.com/akirachoi01/playy/main/intro.ts
 
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
@@ -281,6 +280,9 @@ https://qp-pldt-live-grp-08-prod.akamaized.net/out/u/truefm_tv.mpd
 
 #EXTINF:-1 tvg-id="dzbbsuper" tvg-name="DZBB SUPER RAYDO" tvg-logo="https://i.imgur.com/w6jK02p.jpg" group-title="🇵🇭 CIGNAL LOCAL",DZBB SUPER RAYDO
 https://stream.gmanews.tv/ioslive/livestream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="maruyacigcpnv" tvg-name="Author Info" tvg-logo="https://i.imgur.com/54f9r5A.png" group-title="🇵🇭 CONV-CIG MOVIES",MaruyaTV InFo
+https://raw.githubusercontent.com/akirachoi01/playy/main/intro.ts
 
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
 #KODIPROP:inputstream.adaptive.license_key=http://143.44.136.74:9443/widevine/?deviceId=02:00:00:00:00:00
