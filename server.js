@@ -27,7 +27,7 @@ app.get('/api/playlist', (req, res) => {
 // Ang bagong endpoint na magse-serve ng M3U file mula sa external source
 app.get('/get-m3u', async (req, res) => {
     // Ang base M3U URL ay nakatago na sa backend.
-    const baseM3uUrl = 'https://player.reusora.org/ph.m3u';
+    const baseM3uUrl = 'https://playy.onrender.com/ph.m3u';
     
     // TODO: Dito ka maaaring magdagdag ng validation logic para sa token
     // Example: const { token } = req.query;
