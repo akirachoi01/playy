@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>🎬 OTT Playlist Generator</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #fff;
+            font-family: 'Segoe UI', sans-serif;
+            padding: 2rem;
+            max-width: 600px;
+            margin: auto;
+            text-align: center;
+        }
+        button {
+            background-color: #e53935;
+            border: none;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #c62828;
+        }
+        #linkBox {
+            background-color: #1e1e1e;
+            padding: 1.5rem;
+            margin-top: 20px;
+            border-radius: 8px;
+            word-break: break-word;
+            text-align: left;
+            display: none;
+        }
+        #copyBtn {
+            margin-top: 10px;
+            display: none;
+        }
+        a {
+            color: #64ffda;
+        }
+    </style>
+</head>
+<body>
+    <h1>📺 Generate Your M3U Playlist</h1>
+    <p>Pindutin ang button para makuha ang iyong playlist link na may expiration (5 minuto).</p>
+
+    <button onclick="generate()">🔄 Generate Playlist Link</button>
+
+    <div id="linkBox"></div>
+    <button id="copyBtn" onclick="copyLink()">📋 Copy to Clipboard</button>
+
+    <script>
+        let generatedLink = '';
+
+        async function generate() {
+            document.getElementById('linkBox').innerText = 'Generating link...';
+            document.getElementById('linkBox').style.display = 'block';
+            document.getElementById('copyBtn').style.display = 'none';
+
+            try {
+                const res = await fetch('/api/playlist');
+                const data = await res.json();
+
+                if (!data.url) {
+                    document.getElementById('linkBox').innerText = 'Error: ' + (data.error || 'Hindi makagawa ng link.');
+                    return;
+                }
+
+                generatedLink = data.url;
+                document.getElementById('linkBox').innerHTML = `<strong>Your M3U Link:</strong><br><a href="${generatedLink}" target="_blank">${generatedLink}</a>`;
+                document.getElementById('copyBtn').style.display = 'inline-block';
+            } catch (e) {
+                document.getElementById('linkBox').innerText = 'Failed to fetch. Siguraduhin na tumatakbo ang server.';
+            }
+        }
+
+        function copyLink() {
+            navigator.clipboard.writeText(generatedLink);
+            alert('Playlist link copied to clipboard!');
+        }
+    </script>
+</body>
+</html>
