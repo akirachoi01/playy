@@ -18,7 +18,6 @@ import{r as f,a as Ht,b as kr,R as W,c as oe}from"./react-vendor-ZAbDnuDT.js";im
  * LICENSE.md file in the root directory of this source tree.
  *
  * @license MIT
-
  */function G(){return G=Object.assign?Object.assign.bind():function(t){for(var e=1;e<arguments.length;e++){var r=arguments[e];for(var a in r)Object.prototype.hasOwnProperty.call(r,a)&&(t[a]=r[a])}return t},G.apply(this,arguments)}var U;(function(t){t.Pop="POP",t.Push="PUSH",t.Replace="REPLACE"})(U||(U={}));const rt="popstate";function Cr(t){t===void 0&&(t={});function e(a,l){let{pathname:i,search:s,hash:o}=a.location;return He("",{pathname:i,search:s,hash:o},l.state&&l.state.usr||null,l.state&&l.state.key||"default")}function r(a,l){return typeof l=="string"?l:ge(l)}return Lr(e,r,null,t)}function C(t,e){if(t===!1||t===null||typeof t>"u")throw new Error(e)}function Ut(t,e){if(!t){typeof console<"u"&&console.warn(e);try{throw new Error(e)}catch{}}}function Pr(){return Math.random().toString(36).substr(2,8)}function at(t,e){return{usr:t.state,key:t.key,idx:e}}function He(t,e,r,a){return r===void 0&&(r=null),G({pathname:typeof t=="string"?t:t.pathname,search:"",hash:""},typeof e=="string"?Y(e):e,{state:r,key:e&&e.key||a||Pr()})}function ge(t){let{pathname:e="/",search:r="",hash:a=""}=t;return r&&r!=="?"&&(e+=r.charAt(0)==="?"?r:"?"+r),a&&a!=="#"&&(e+=a.charAt(0)==="#"?a:"#"+a),e}function Y(t){let e={};if(t){let r=t.indexOf("#");r>=0&&(e.hash=t.substr(r),t=t.substr(0,r));let a=t.indexOf("?");a>=0&&(e.search=t.substr(a),t=t.substr(0,a)),t&&(e.pathname=t)}return e}function Lr(t,e,r,a){a===void 0&&(a={});let{window:l=document.defaultView,v5Compat:i=!1}=a,s=l.history,o=U.Pop,d=null,u=p();u==null&&(u=0,s.replaceState(G({},s.state,{idx:u}),""));function p(){return(s.state||{idx:null}).idx}function c(){o=U.Pop;let m=p(),v=m==null?null:m-u;u=m,d&&d({action:o,location:y.location,delta:v})}function h(m,v){o=U.Push;let w=He(y.location,m,v);u=p()+1;let j=at(w,u),T=y.createHref(w);try{s.pushState(j,"",T)}catch(P){if(P instanceof DOMException&&P.name==="DataCloneError")throw P;l.location.assign(T)}i&&d&&d({action:o,location:y.location,delta:1})}function b(m,v){o=U.Replace;let w=He(y.location,m,v);u=p();let j=at(w,u),T=y.createHref(w);s.replaceState(j,"",T),i&&d&&d({action:o,location:y.location,delta:0})}function x(m){let v=l.location.origin!=="null"?l.location.origin:l.location.href,w=typeof m=="string"?m:ge(m);return w=w.replace(/ $/,"%20"),C(v,"No window.location.(origin|href) available to create URL for href: "+w),new URL(w,v)}let y={get action(){return o},get location(){return t(l,s)},listen(m){if(d)throw new Error("A history only accepts one active listener");return l.addEventListener(rt,c),d=m,()=>{l.removeEventListener(rt,c),d=null}},createHref(m){return e(l,m)},createURL:x,encodeLocation(m){let v=x(m);return{pathname:v.pathname,search:v.search,hash:v.hash}},push:h,replace:b,go(m){return s.go(m)}};return y}var nt;(function(t){t.data="data",t.deferred="deferred",t.redirect="redirect",t.error="error"})(nt||(nt={}));function Mr(t,e,r){return r===void 0&&(r="/"),$r(t,e,r)}function $r(t,e,r,a){let l=typeof e=="string"?Y(e):e,i=We(l.pathname||"/",r);if(i==null)return null;let s=Wt(t);Ir(s);let o=null;for(let d=0;o==null&&d<s.length;++d){let u=Qr(i);o=Fr(s[d],u)}return o}function Wt(t,e,r,a){e===void 0&&(e=[]),r===void 0&&(r=[]),a===void 0&&(a="");let l=(i,s,o)=>{let d={relativePath:o===void 0?i.path||"":o,caseSensitive:i.caseSensitive===!0,childrenIndex:s,route:i};d.relativePath.startsWith("/")&&(C(d.relativePath.startsWith(a),'Absolute route path "'+d.relativePath+'" nested under path '+('"'+a+'" is not valid. An absolute child route path ')+"must start with the combined path of all its parent routes."),d.relativePath=d.relativePath.slice(a.length));let u=z([a,d.relativePath]),p=r.concat(d);i.children&&i.children.length>0&&(C(i.index!==!0,"Index routes must not have child routes. Please remove "+('all child routes from route path "'+u+'".')),Wt(i.children,e,p,u)),!(i.path==null&&!i.index)&&e.push({path:u,score:Wr(u,i.index),routesMeta:p})};return t.forEach((i,s)=>{var o;if(i.path===""||!((o=i.path)!=null&&o.includes("?")))l(i,s);else for(let d of zt(i.path))l(i,s,d)}),e}function zt(t){let e=t.split("/");if(e.length===0)return[];let[r,...a]=e,l=r.endsWith("?"),i=r.replace(/\?$/,"");if(a.length===0)return l?[i,""]:[i];let s=zt(a.join("/")),o=[];return o.push(...s.map(d=>d===""?i:[i,d].join("/"))),l&&o.push(...s),o.map(d=>t.startsWith("/")&&d===""?"/":d)}function Ir(t){t.sort((e,r)=>e.score!==r.score?r.score-e.score:zr(e.routesMeta.map(a=>a.childrenIndex),r.routesMeta.map(a=>a.childrenIndex)))}const Rr=/^:[\w-]+$/,Hr=3,Br=2,Ar=1,Dr=10,Ur=-2,lt=t=>t==="*";function Wr(t,e){let r=t.split("/"),a=r.length;return r.some(lt)&&(a+=Ur),e&&(a+=Br),r.filter(l=>!lt(l)).reduce((l,i)=>l+(Rr.test(i)?Hr:i===""?Ar:Dr),a)}function zr(t,e){return t.length===e.length&&t.slice(0,-1).every((a,l)=>a===e[l])?t[t.length-1]-e[e.length-1]:0}function Fr(t,e,r){let{routesMeta:a}=t,l={},i="/",s=[];for(let o=0;o<a.length;++o){let d=a[o],u=o===a.length-1,p=i==="/"?e:e.slice(i.length)||"/",c=Vr({path:d.relativePath,caseSensitive:d.caseSensitive,end:u},p),h=d.route;if(!c)return null;Object.assign(l,c.params),s.push({params:l,pathname:z([i,c.pathname]),pathnameBase:Gr(z([i,c.pathnameBase])),route:h}),c.pathnameBase!=="/"&&(i=z([i,c.pathnameBase]))}return s}function Vr(t,e){typeof t=="string"&&(t={path:t,caseSensitive:!1,end:!0});let[r,a]=qr(t.path,t.caseSensitive,t.end),l=e.match(r);if(!l)return null;let i=l[0],s=i.replace(/(.)\/+$/,"$1"),o=l.slice(1);return{params:a.reduce((u,p,c)=>{let{paramName:h,isOptional:b}=p;if(h==="*"){let y=o[c]||"";s=i.slice(0,i.length-y.length).replace(/(.)\/+$/,"$1")}const x=o[c];return b&&!x?u[h]=void 0:u[h]=(x||"").replace(/%2F/g,"/"),u},{}),pathname:i,pathnameBase:s,pattern:t}}function qr(t,e,r){e===void 0&&(e=!1),r===void 0&&(r=!0),Ut(t==="*"||!t.endsWith("*")||t.endsWith("/*"),'Route path "'+t+'" will be treated as if it were '+('"'+t.replace(/\*$/,"/*")+'" because the `*` character must ')+"always follow a `/` in the pattern. To get rid of this warning, "+('please change the route path to "'+t.replace(/\*$/,"/*")+'".'));let a=[],l="^"+t.replace(/\/*\*?$/,"").replace(/^\/*/,"/").replace(/[\\.*+^${}|()[\]]/g,"\\$&").replace(/\/:([\w-]+)(\?)?/g,(s,o,d)=>(a.push({paramName:o,isOptional:d!=null}),d?"/?([^\\/]+)?":"/([^\\/]+)"));return t.endsWith("*")?(a.push({paramName:"*"}),l+=t==="*"||t==="/*"?"(.*)$":"(?:\\/(.+)|\\/*)$"):r?l+="\\/*$":t!==""&&t!=="/"&&(l+="(?:(?=\\/|$))"),[new RegExp(l,e?void 0:"i"),a]}function Qr(t){try{return t.split("/").map(e=>decodeURIComponent(e).replace(/\//g,"%2F")).join("/")}catch(e){return Ut(!1,'The URL path "'+t+'" could not be decoded because it is is a malformed URL segment. This is probably due to a bad percent '+("encoding ("+e+").")),t}}function We(t,e){if(e==="/")return t;if(!t.toLowerCase().startsWith(e.toLowerCase()))return null;let r=e.endsWith("/")?e.length-1:e.length,a=t.charAt(r);return a&&a!=="/"?null:t.slice(r)||"/"}function Yr(t,e){e===void 0&&(e="/");let{pathname:r,search:a="",hash:l=""}=typeof t=="string"?Y(t):t;return{pathname:r?r.startsWith("/")?r:Kr(r,e):e,search:Jr(a),hash:Zr(l)}}function Kr(t,e){let r=e.replace(/\/+$/,"").split("/");return t.split("/").forEach(l=>{l===".."?r.length>1&&r.pop():l!=="."&&r.push(l)}),r.length>1?r.join("/"):"/"}function Te(t,e,r,a){return"Cannot include a '"+t+"' character in a manually specified "+("`to."+e+"` field ["+JSON.stringify(a)+"].  Please separate it out to the ")+("`to."+r+"` field. Alternatively you may provide the full path as ")+'a string in <Link to="..."> and the router will parse it for you.'}function Xr(t){return t.filter((e,r)=>r===0||e.route.path&&e.route.path.length>0)}function Ft(t,e){let r=Xr(t);return e?r.map((a,l)=>l===r.length-1?a.pathname:a.pathnameBase):r.map(a=>a.pathnameBase)}function Vt(t,e,r,a){a===void 0&&(a=!1);let l;typeof t=="string"?l=Y(t):(l=G({},t),C(!l.pathname||!l.pathname.includes("?"),Te("?","pathname","search",l)),C(!l.pathname||!l.pathname.includes("#"),Te("#","pathname","hash",l)),C(!l.search||!l.search.includes("#"),Te("#","search","hash",l)));let i=t===""||l.pathname==="",s=i?"/":l.pathname,o;if(s==null)o=r;else{let c=e.length-1;if(!a&&s.startsWith("..")){let h=s.split("/");for(;h[0]==="..";)h.shift(),c-=1;l.pathname=h.join("/")}o=c>=0?e[c]:"/"}let d=Yr(l,o),u=s&&s!=="/"&&s.endsWith("/"),p=(i||s===".")&&r.endsWith("/");return!d.pathname.endsWith("/")&&(u||p)&&(d.pathname+="/"),d}const z=t=>t.join("/").replace(/\/\/+/g,"/"),Gr=t=>t.replace(/\/+$/,"").replace(/^\/*/,"/"),Jr=t=>!t||t==="?"?"":t.startsWith("?")?t:"?"+t,Zr=t=>!t||t==="#"?"":t.startsWith("#")?t:"#"+t;function ea(t){return t!=null&&typeof t.status=="number"&&typeof t.statusText=="string"&&typeof t.internal=="boolean"&&"data"in t}const qt=["post","put","patch","delete"];new Set(qt);const ta=["get",...qt];new Set(ta);/**
  * React Router v6.29.0
  *
@@ -72,7 +71,192 @@ import{r as f,a as Ht,b as kr,R as W,c as oe}from"./react-vendor-ZAbDnuDT.js";im
 
     
     <link rel="manifest" href="manifest.html" />
+    <link rel="apple-touch-icon" href="<!doctype html>
+<html lang="en">
+  
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="https://i.imgur.com/cmOdVwr.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Maruyatv - The most powerful video embed API. Integrate seamless video playback anywhere." />
+    <meta name="keywords" content="video api, embed, streaming, player, video platform" />
+    <meta name="author" content="Maruyatv" />
+
+    
+    <link rel="manifest" href="manifest.html" />
+    <link rel="apple-touch-icon" href="<!doctype html>
+<html lang="en">
+  
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="https://i.imgur.com/cmOdVwr.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Maruyatv - The most powerful video embed API. Integrate seamless video playback anywhere." />
+    <meta name="keywords" content="video api, embed, streaming, player, video platform" />
+    <meta name="author" content="Maruyatv" />
+
+    
+    <link rel="manifest" href="manifest.html" />
+    <link rel="apple-touch-icon" href="<!doctype html>
+<html lang="en">
+  
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="https://i.imgur.com/cmOdVwr.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Maruyatv - The most powerful video embed API. Integrate seamless video playback anywhere." />
+    <meta name="keywords" content="video api, embed, streaming, player, video platform" />
+    <meta name="author" content="Maruyatv" />
+
+    
+    <link rel="manifest" href="manifest.html" />
+    <link rel="apple-touch-icon" href="<!doctype html>
+<html lang="en">
+  
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="https://i.imgur.com/cmOdVwr.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Maruyatv - The most powerful video embed API. Integrate seamless video playback anywhere." />
+    <meta name="keywords" content="video api, embed, streaming, player, video platform" />
+    <meta name="author" content="Maruyatv" />
+
+    
+    <link rel="manifest" href="manifest.html" />
+    <link rel="apple-touch-icon" href="<!doctype html>
+<html lang="en">
+  
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="https://i.imgur.com/cmOdVwr.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Maruyatv - The most powerful video embed API. Integrate seamless video playback anywhere." />
+    <meta name="keywords" content="video api, embed, streaming, player, video platform" />
+    <meta name="author" content="Maruyatv" />
+
+    
+    <link rel="manifest" href="manifest.html" />
     <link rel="apple-touch-icon" href="logo.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://i.imgur.com/cmOdVwr.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://i.imgur.com/cmOdVwr.png" />
+    <title>MARUYATV - Powerful Video Embed API</title>
+
+    <!-- Preload critical assets -->
+    <link rel="preload" href="https://i.imgur.com/cmOdVwr.png" as="image" />
+    <link rel="preconnect" href="https://api.videasy.net/" />
+    <link rel="preconnect" href="../player.videasy.net/index.html" />
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="fonts/inter-var.html" as="font" type="font/woff2" crossorigin />
+    <script type="module" crossorigin src="assets/index-C0y0wcqO.js"></script>
+    <link rel="modulepreload" crossorigin href="assets/react-vendor-ZAbDnuDT.js">
+    <link rel="modulepreload" crossorigin href="assets/ui-vendor-B4ZIl0mj.js">
+    <link rel="stylesheet" crossorigin href="assets/index-C8-njzVR.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+
+</html>
+" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://i.imgur.com/cmOdVwr.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://i.imgur.com/cmOdVwr.png" />
+    <title>MARUYATV - Powerful Video Embed API</title>
+
+    <!-- Preload critical assets -->
+    <link rel="preload" href="https://i.imgur.com/cmOdVwr.png" as="image" />
+    <link rel="preconnect" href="https://api.videasy.net/" />
+    <link rel="preconnect" href="../player.videasy.net/index.html" />
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="fonts/inter-var.html" as="font" type="font/woff2" crossorigin />
+    <script type="module" crossorigin src="assets/index-C0y0wcqO.js"></script>
+    <link rel="modulepreload" crossorigin href="assets/react-vendor-ZAbDnuDT.js">
+    <link rel="modulepreload" crossorigin href="assets/ui-vendor-B4ZIl0mj.js">
+    <link rel="stylesheet" crossorigin href="assets/index-C8-njzVR.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+
+</html>
+" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://i.imgur.com/cmOdVwr.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://i.imgur.com/cmOdVwr.png" />
+    <title>MARUYATV - Powerful Video Embed API</title>
+
+    <!-- Preload critical assets -->
+    <link rel="preload" href="https://i.imgur.com/cmOdVwr.png" as="image" />
+    <link rel="preconnect" href="https://api.videasy.net/" />
+    <link rel="preconnect" href="../player.videasy.net/index.html" />
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="fonts/inter-var.html" as="font" type="font/woff2" crossorigin />
+    <script type="module" crossorigin src="assets/index-C0y0wcqO.js"></script>
+    <link rel="modulepreload" crossorigin href="assets/react-vendor-ZAbDnuDT.js">
+    <link rel="modulepreload" crossorigin href="assets/ui-vendor-B4ZIl0mj.js">
+    <link rel="stylesheet" crossorigin href="assets/index-C8-njzVR.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+
+</html>
+" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://i.imgur.com/cmOdVwr.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://i.imgur.com/cmOdVwr.png" />
+    <title>MARUYATV - Powerful Video Embed API</title>
+
+    <!-- Preload critical assets -->
+    <link rel="preload" href="https://i.imgur.com/cmOdVwr.png" as="image" />
+    <link rel="preconnect" href="https://api.videasy.net/" />
+    <link rel="preconnect" href="../player.videasy.net/index.html" />
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="fonts/inter-var.html" as="font" type="font/woff2" crossorigin />
+    <script type="module" crossorigin src="assets/index-C0y0wcqO.js"></script>
+    <link rel="modulepreload" crossorigin href="assets/react-vendor-ZAbDnuDT.js">
+    <link rel="modulepreload" crossorigin href="assets/ui-vendor-B4ZIl0mj.js">
+    <link rel="stylesheet" crossorigin href="assets/index-C8-njzVR.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+
+</html>
+" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://i.imgur.com/cmOdVwr.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://i.imgur.com/cmOdVwr.png" />
+    <title>MARUYATV - Powerful Video Embed API</title>
+
+    <!-- Preload critical assets -->
+    <link rel="preload" href="https://i.imgur.com/cmOdVwr.png" as="image" />
+    <link rel="preconnect" href="https://api.videasy.net/" />
+    <link rel="preconnect" href="../player.videasy.net/index.html" />
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="fonts/inter-var.html" as="font" type="font/woff2" crossorigin />
+    <script type="module" crossorigin src="assets/index-C0y0wcqO.js"></script>
+    <link rel="modulepreload" crossorigin href="assets/react-vendor-ZAbDnuDT.js">
+    <link rel="modulepreload" crossorigin href="assets/ui-vendor-B4ZIl0mj.js">
+    <link rel="stylesheet" crossorigin href="assets/index-C8-njzVR.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+
+</html>
+" />
     <link rel="icon" type="image/png" sizes="32x32" href="https://i.imgur.com/cmOdVwr.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="https://i.imgur.com/cmOdVwr.png" />
     <title>MARUYATV - Powerful Video Embed API</title>
@@ -306,3 +490,4 @@ window.addEventListener("message", function (event) {
             bg-purple-500/10 rounded-full blur-3xl`}),n.jsx("div",{className:`absolute bottom-0 left-0 w-[600px] h-[600px] 
             bg-purple-600/10 rounded-full blur-3xl`}),n.jsx("div",{className:`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
             w-[1000px] h-[1000px] bg-purple-400/10 rounded-full blur-3xl`})]}),n.jsxs("div",{className:"relative",children:[n.jsx(Wa,{}),n.jsx("main",{className:"relative min-h-[calc(100vh-4rem)]",children:n.jsxs(wa,{children:[n.jsx(he,{path:"/",element:n.jsx(Fa,{})}),n.jsx(he,{path:"/player",element:n.jsx(Ja,{})}),n.jsx(he,{path:"/docs",element:n.jsx(as,{})})]})})]})]})})}Re.createRoot(document.getElementById("root")).render(n.jsx(W.StrictMode,{children:n.jsx(Oa,{children:n.jsx(ns,{})})}));
+
